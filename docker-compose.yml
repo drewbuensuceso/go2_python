@@ -1,0 +1,28 @@
+# docker-compose.yml
+
+version: '1'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - .:/code
+    command: >
+      sh -c "python3 manage.py runserver 0.0.0.0:8000"
+
+  db:
+    image: postgres:12
+    environment:
+      POSTGRES_DB: order_processing_db
+      POSTGRES_USER: order_processing_user
+      POSTGRES_PASSWORD: order_processing_password
+
+  redis:
+    image: redis:latest
