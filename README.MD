@@ -37,17 +37,22 @@ cd order_processing_project
 2. Clone this repository to your local machine:
 
 ```bash
-docker-compose up --build
+docker-compose up --build 
+```
+run this for first time run if image is not yet built else run:
+
+```bash
+docker-compose up 
 ```
 
 ## Endpoints and Usage
 
 ### API Endpoints
 
-1. ```GET```api/available/
-2. ```GET```out-of-stock/
-3. ```POST```update-status/<int:pk>/
-4. ```POST```create/
+1. ```GET```api/products/available/
+2. ```GET```api/products/out-of-stock/
+3. ```POST```api/products/update-status/<int:pk>/
+4. ```POST```api/products/create/
 
 ### Usage
 
