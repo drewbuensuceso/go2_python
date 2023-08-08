@@ -32,14 +32,19 @@ Before running the project, make sure you have the following installed on your s
 git clone https://github.com/drewbuensuceso/go2_python.git
 cd order_processing_project
 ```
+
+2. For database creation and setup, run:
+
+```bash
+docker-compose run web python manage.py migrate
+```
+
 ### Running the Application
-
-2. Clone this repository to your local machine:
-
+1. To run the application for the first time and build the docker images, run:
 ```bash
 docker-compose up --build 
 ```
-run this for first time run if image is not yet built else run:
+If not first time run you can remove the option ```--build```:
 
 ```bash
 docker-compose up 
