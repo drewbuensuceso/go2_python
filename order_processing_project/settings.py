@@ -134,3 +134,16 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Celery settings
 CELERY_BROKER_URL = 'redis://redis:6379/0'
 CELERY_RESULT_BACKEND = 'redis://redis:6379/0'
+
+
+# Email Backend
+
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+MAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # Use your email provider's SMTP server
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+EMAIL_HOST_USER = 'PUT EMAIL HOST USER HERE'
+EMAIL_HOST_PASSWORD = 'PUT EMAIL HOST PASSWORD HERE'
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
