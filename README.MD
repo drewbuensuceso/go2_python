@@ -118,7 +118,7 @@ Send a POST request to http://localhost:8000/api/products/order/ containing a in
     ],
     "customer": {
         "name": "John Smith",
-        "email": "rayandrew.buensuceso@gmail.com",
+        "email": "john.smith@example.com",
         "address": "123 Main St, Anytown USA"
     }
 }
