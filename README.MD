@@ -58,7 +58,48 @@ docker-compose up
 2. ```GET```api/products/out-of-stock/
 3. ```POST```api/products/update-status/<int:pk>/
 4. ```PUT```api/products/create/
+5. ```POST``` api/products/order/
 
 ### Usage
 
-1. put usage demo here
+After running the server successfully 
+
+
+1. AVAILABLE PRODUCTS
+
+Send a GET request to localhost:8000/api/products/available/
+
+2. OUT OF STOCK PRODUCTS
+
+Send a GET request to localhost:8000/api/products/out-of-stock/
+
+
+3. CREATE
+
+Send a GET request to http://localhost:8000/api/products/create/ containing a in the request body a JSON in the following format:
+
+```json
+{   
+    "name":"Sample Available Product 3",
+    "sku": "132114",
+    "price": 11.00,
+    "description": "This is a sample product",
+    "quantity": 0,
+    "status": false
+}
+```
+
+4. UPDATE
+
+Send a GET request to http://localhost:8000/api/products/update-status/1/ containing a in the request body a JSON in the following format:
+
+```json
+{   
+    "name":"Sample Available Product 1",
+    "sku": "000002",
+    "price": 20.00,
+    "description": "This is a sample product",
+    "quantity": 20,
+    "status": true
+}
+```
