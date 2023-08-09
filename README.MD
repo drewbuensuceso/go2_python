@@ -91,7 +91,7 @@ Send a ```POST``` request to http://localhost:8000/api/products/create/ containi
 
 #### 4. UPDATE
 
-Send a ```PUT``` request to http://localhost:8000/api/products/update-status/```<primary key of product>```/ containing a in the request body a JSON in the following format:
+Send a ```PUT``` request to http://localhost:8000/api/products/update-status/```primary key of product```/ containing a in the request body a JSON in the following format:
 
 ```json
 {   
