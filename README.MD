@@ -67,16 +67,16 @@ After running the server successfully
 
 #### 1. AVAILABLE PRODUCTS
 
-Send a GET request to localhost:8000/api/products/available/
+Send a ```GET``` request to localhost:8000/api/products/available/
 
 #### 2. OUT OF STOCK PRODUCTS
 
-Send a GET request to localhost:8000/api/products/out-of-stock/
+Send a ```GET``` request to localhost:8000/api/products/out-of-stock/
 
 
 #### 3. CREATE
 
-Send a POST request to http://localhost:8000/api/products/create/ containing a in the request body a JSON in the following format:
+Send a ```POST``` request to http://localhost:8000/api/products/create/ containing a in the request body a JSON in the following format:
 
 ```json
 {   
@@ -91,7 +91,7 @@ Send a POST request to http://localhost:8000/api/products/create/ containing a i
 
 #### 4. UPDATE
 
-Send a PUT request to http://localhost:8000/api/products/update-status/<primary key of product>/ containing a in the request body a JSON in the following format:
+Send a ```PUT``` request to http://localhost:8000/api/products/update-status/<primary key of product>/ containing a in the request body a JSON in the following format:
 
 ```json
 {   
@@ -101,7 +101,7 @@ Send a PUT request to http://localhost:8000/api/products/update-status/<primary 
 
 #### 5. ORDER PROCESSING ENDPOINT
 
-Send a POST request to http://localhost:8000/api/products/order/ containing a in the request body a JSON in the following format:
+Send a ```POST``` request to http://localhost:8000/api/products/order/ containing a in the request body a JSON in the following format:
 
 ```json
 {
