@@ -10,10 +10,9 @@ Django, DRF, and other libraries.
    - [Installation](#installation)
    - [Running the Application](#running-the-application)
 3. [Endpoints and Usage](#usage)
-   - [Accessing the Application](#accessing-the-application)
-   - [Adding/Updating Products](#adding-updating-products)
-   - [Other Custom Behaviors](#other-custom-behaviors)
-
+   - [API Endpoints](#api-endpoints)
+   - [Usage](#usage)
+   
 ## Requirements
 
 Before running the project, make sure you have the following installed on your system:
