@@ -57,7 +57,7 @@ docker-compose up
 1. ```GET```api/products/available/
 2. ```GET```api/products/out-of-stock/
 3. ```POST```api/products/update-status/<int:pk>/
-4. ```POST```api/products/create/
+4. ```PUT```api/products/create/
 
 ### Usage
 
