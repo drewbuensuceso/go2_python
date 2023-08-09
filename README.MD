@@ -65,16 +65,16 @@ docker-compose up
 After running the server successfully 
 
 
-1. AVAILABLE PRODUCTS
+#### 1. AVAILABLE PRODUCTS
 
 Send a GET request to localhost:8000/api/products/available/
 
-2. OUT OF STOCK PRODUCTS
+#### 2. OUT OF STOCK PRODUCTS
 
 Send a GET request to localhost:8000/api/products/out-of-stock/
 
 
-3. CREATE
+#### 3. CREATE
 
 Send a GET request to http://localhost:8000/api/products/create/ containing a in the request body a JSON in the following format:
 
@@ -89,7 +89,7 @@ Send a GET request to http://localhost:8000/api/products/create/ containing a in
 }
 ```
 
-4. UPDATE
+#### 4. UPDATE
 
 Send a GET request to http://localhost:8000/api/products/update-status/1/ containing a in the request body a JSON in the following format:
 
