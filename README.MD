@@ -76,7 +76,7 @@ Send a GET request to localhost:8000/api/products/out-of-stock/
 
 #### 3. CREATE
 
-Send a GET request to http://localhost:8000/api/products/create/ containing a in the request body a JSON in the following format:
+Send a POST request to http://localhost:8000/api/products/create/ containing a in the request body a JSON in the following format:
 
 ```json
 {   
@@ -91,15 +91,35 @@ Send a GET request to http://localhost:8000/api/products/create/ containing a in
 
 #### 4. UPDATE
 
-Send a GET request to http://localhost:8000/api/products/update-status/1/ containing a in the request body a JSON in the following format:
+Send a PUT request to http://localhost:8000/api/products/update-status/<primary key of product>/ containing a in the request body a JSON in the following format:
 
 ```json
 {   
-    "name":"Sample Available Product 1",
-    "sku": "000002",
-    "price": 20.00,
-    "description": "This is a sample product",
-    "quantity": 20,
     "status": true
+}
+```
+
+#### 5. ORDER PROCESSING ENDPOINT
+
+Send a POST request to http://localhost:8000/api/products/order/ containing a in the request body a JSON in the following format:
+
+```json
+{
+    "order_number": "12345",
+    "items": [
+        {
+            "sku": "000002",
+            "quantity": 2
+        },
+        {
+            "sku": "000003",
+            "quantity": 1
+        }
+    ],
+    "customer": {
+        "name": "John Smith",
+        "email": "rayandrew.buensuceso@gmail.com",
+        "address": "123 Main St, Anytown USA"
+    }
 }
 ```
