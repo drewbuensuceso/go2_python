@@ -134,4 +134,5 @@ Send a ```POST``` request to http://localhost:8000/api/products/order/ containin
 <img width="960" alt="successful order" src="https://github.com/drewbuensuceso/go2_python/assets/42257616/fb651478-3ae6-44ae-8750-8064fa603cd3">
 
 #### ORDER WITH AN OUT-OF-STOCK ITEM
-<img width="960" alt="order with out of stock" src="https://github.com/drewbuensuceso/go2_python/assets/42257616/50b7b259-94b0-4c3e-9ef2-fb3307b80c57">
+<img width="958" alt="order with out of stock" src="https://github.com/drewbuensuceso/go2_python/assets/42257616/2bc0de42-5a02-4d6d-a29e-aadabff68bcf">
+
