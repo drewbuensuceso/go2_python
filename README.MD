@@ -95,11 +95,6 @@ Send a GET request to http://localhost:8000/api/products/update-status/1/ contai
 
 ```json
 {   
-    "name":"Sample Available Product 1",
-    "sku": "000002",
-    "price": 20.00,
-    "description": "This is a sample product",
-    "quantity": 20,
     "status": true
 }
 ```
