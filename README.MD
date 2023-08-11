@@ -12,7 +12,7 @@ Django, DRF, and other libraries.
 3. [Endpoints and Usage](#usage)
    - [API Endpoints](#api-endpoints)
    - [Usage](#usage)
-   
+
 ## Requirements
 
 Before running the project, make sure you have the following installed on your system:
@@ -136,3 +136,5 @@ Send a ```POST``` request to http://localhost:8000/api/products/order/ containin
 #### ORDER WITH AN OUT-OF-STOCK ITEM
 <img width="958" alt="order with out of stock" src="https://github.com/drewbuensuceso/go2_python/assets/42257616/2bc0de42-5a02-4d6d-a29e-aadabff68bcf">
 
+
+### NOTE: The parameters EMAIL_HOST_USER and EMAIL_HOST_PASSWORD must be set to a correct email and password for a real gmail account for the celery worker to not produce an error and to successfully make an order and subtract product quantity from inventory properly when making an order. These parameters can be found in order_processing_project/settings.py

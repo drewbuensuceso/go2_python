@@ -19,7 +19,7 @@ def process_order(request):
         # check if oos or there's enough quantity for the SKU
         try:
             product = Product.objects.get(sku=item['sku'])
-            if product.quantity <= 0:
+            if product.quantity <= 0 | product.status == False:
                 out_of_stock_items.append(product.name)
             if product.quantity < item['quantity']:
                 out_of_stock_items.append(product.name)

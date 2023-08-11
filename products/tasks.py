@@ -11,7 +11,12 @@ def process_order(order_data):
     for item in items:
         product = Product.objects.get(sku=item['sku'])
         product.quantity -= item['quantity']
-        product.save()
+        if product.quantity <= 0:
+            product.quantity = 0
+            product.status = False
+            product.save(update_fields=['status', 'quantity'])
+        product.save(update_fields=['quantity'])
+        
 
     # Send an email to the customer confirming the order
     customer_email = order_data['customer']['email']
