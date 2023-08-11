@@ -68,9 +68,13 @@ After running the server successfully
 
 Send a ```GET``` request to localhost:8000/api/products/available/
 
+<img width="960" alt="Get available products" src="https://github.com/drewbuensuceso/go2_python/assets/42257616/5571e456-ad9f-4b2b-924d-c42036e06751">
+
 #### 2. OUT OF STOCK PRODUCTS
 
 Send a ```GET``` request to localhost:8000/api/products/out-of-stock/
+
+<img width="960" alt="out of stock list" src="https://github.com/drewbuensuceso/go2_python/assets/42257616/129ba365-c8bb-4d39-af72-00bfc43f2eb5">
 
 
 #### 3. CREATE
@@ -87,8 +91,10 @@ Send a ```POST``` request to http://localhost:8000/api/products/create/ containi
     "status": false
 }
 ```
+A successful product creation will return a 201 Created response 
+<img width="960" alt="product created" src="https://github.com/drewbuensuceso/go2_python/assets/42257616/80684391-0df1-40f6-9263-c33b61e0c056">
 
-#### 4. UPDATE
+#### 4. UPDATE STATUS
 
 Send a ```PUT``` request to http://localhost:8000/api/products/update-status/primary_key_of_product/ containing a in the request body a JSON in the following format:
 
@@ -97,6 +103,8 @@ Send a ```PUT``` request to http://localhost:8000/api/products/update-status/pri
     "status": true
 }
 ```
+
+<img width="959" alt="successful update product" src="https://github.com/drewbuensuceso/go2_python/assets/42257616/e2566fff-b0a9-4375-9879-7c833946ecf2">
 
 #### 5. ORDER PROCESSING ENDPOINT
 
@@ -122,3 +130,9 @@ Send a ```POST``` request to http://localhost:8000/api/products/order/ containin
     }
 }
 ```
+#### SUCCESSFUL ORDER
+<img width="960" alt="successful order" src="https://github.com/drewbuensuceso/go2_python/assets/42257616/fb651478-3ae6-44ae-8750-8064fa603cd3">
+
+#### ORDER WITH AN OUT-OF-STOCK ITEM
+<img width="958" alt="order with out of stock" src="https://github.com/drewbuensuceso/go2_python/assets/42257616/2bc0de42-5a02-4d6d-a29e-aadabff68bcf">
+
